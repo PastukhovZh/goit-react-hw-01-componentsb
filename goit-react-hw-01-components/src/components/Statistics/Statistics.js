@@ -1,4 +1,6 @@
-import { StatisticsWrap,Title, StatsList, StatsItem } from "./Statistics.styled"
+import { StatisticsWrap, Title, StatsList, StatsItem } from "./Statistics.styled"
+import PropTypes from "prop-types"
+
 export const Statistics = ({title, stats}) => {
     return (
         <StatisticsWrap>
@@ -12,5 +14,16 @@ export const Statistics = ({title, stats}) => {
          ))}
   </StatsList>
 </StatisticsWrap>
+    )
+}
+
+Statistics.propTypes = {
+    title: PropTypes.string.isRequired,
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired,
+        })
     )
 }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProfileWrap = styled.div`
-width: 300px;
+/* width: 300px; */
 margin: 0 auto;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
         0px 2px 1px rgb(0 0 0 / 20%);
@@ -13,7 +13,7 @@ align-items: center;
 padding: 20px;
     flex-direction: column;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background: #ffffff;
 `
 

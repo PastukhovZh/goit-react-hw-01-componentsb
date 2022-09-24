@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 
+
 export const StatisticsWrap = styled.section`
-width: 310px;
+/* width: 310px; */
 display: flex;
   flex-direction: column;
   align-items: center;

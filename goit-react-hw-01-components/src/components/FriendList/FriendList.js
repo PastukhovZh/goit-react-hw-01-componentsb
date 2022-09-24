@@ -1,4 +1,5 @@
 import { FriendsList, Friend, IsOnline } from "./FriendList.styled"
+import PropTypes from "prop-types"
 
 const IsOnlineUser = {
     isOnline: 'isOnline'
@@ -18,4 +19,15 @@ export const FriendList = ({ friends }) => {
             }   
 </FriendsList>
     )
+}
+
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      avatar: PropTypes.string,
+      isOnline: PropTypes.bool,
+      id: PropTypes.number.isRequired,
+    })
+  ),
 }
