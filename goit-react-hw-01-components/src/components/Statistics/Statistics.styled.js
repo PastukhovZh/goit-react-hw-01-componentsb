@@ -36,11 +36,3 @@ export const StatsItem = styled.li`
   outline: 1px solid black;
   border-radius:4px; 
 `
-
-// .statlist {
-// 
-// }
-
-// .item {
-// 
-// }
