@@ -1,4 +1,4 @@
-import { FriendsList, Friend, IsOnline } from "./FriendList.styled"
+import { FriendsList, Friend, IsOnline, Avatar } from "./FriendList.styled"
 import PropTypes from "prop-types"
 
 const IsOnlineUser = {
@@ -12,7 +12,7 @@ export const FriendList = ({ friends }) => {
     {friends.map(({ avatar, name, isOnline,id }) => (
         <Friend key = {id}>
             <IsOnline IsOnlineSelect={isOnline ? IsOnlineUser.isOnline : false }></IsOnline>
-                <img className="avatar" src={avatar} alt="User avatar" width="48" />
+                <Avatar className="avatar" src={avatar} alt="User avatar" width="48" />
             <p className="name">{name}</p>
 </Friend>
             ))

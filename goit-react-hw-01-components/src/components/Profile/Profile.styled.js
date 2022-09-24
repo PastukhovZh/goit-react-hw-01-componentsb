@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ProfileWrap = styled.div`
 /* width: 300px; */
-margin: 0 auto;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
         0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 10px 10px;
@@ -13,7 +12,6 @@ align-items: center;
 padding: 20px;
     flex-direction: column;
     text-align: center;
-    /* margin: 0 auto; */
     background: #ffffff;
 `
 
@@ -26,6 +24,7 @@ export const Stats = styled.ul`
     list-style: none;
     padding: 10px;
     border-radius: 0px 0px 10px 10px;
+    margin: 0;
     `
 
 export const Info = styled.li`
@@ -47,7 +46,7 @@ color: #00000059;
 `
 
 export const Image = styled.img`
-width: 100px;
+width: 300px;
 border-radius: 50%`
 
 export const StatsInfo = styled.span`

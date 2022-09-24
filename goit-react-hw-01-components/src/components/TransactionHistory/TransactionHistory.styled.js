@@ -1,15 +1,3 @@
-// .transactionHistory {
-//   text-align: center;
-// }
-
-// table,
-// td {
-//   
-// }
-
-// th {
-//   
-// }
 import styled from "styled-components"
 
 export const TransactionTable = styled.table`
@@ -25,5 +13,5 @@ export const TransactionTh = styled.th`
 border: 1px solid;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: aquamarine;
+  background-color: burlywood;
   `

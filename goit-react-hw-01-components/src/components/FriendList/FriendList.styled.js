@@ -5,7 +5,7 @@ export const FriendsList = styled.ul`
   flex-direction: column;
   list-style: none;
   padding-left: 0;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   margin-top: 0;
   margin-bottom: 0;
 `
@@ -22,26 +22,11 @@ export const Friend = styled.li`
 export const IsOnline = styled.span`
   
   padding: 15px;
-  margin-right: 50px;
+  margin-right: 20px;
   border-radius: 25px;
   background-color: ${p => {
     return p.IsOnlineSelect ? 'green':'red'
   }};
 `
-
-
-// .isOnline {
-//   background-color: green;
-//   padding: 15px;
-//   margin-right: 50px;
-//   border-radius: 25px;
-// }
-// .notOnline {
-//   background-color: red;
-//   padding: 15px;
-//   margin-right: 50px;
-//   border-radius: 25px;
-// }
-// .avatar {
-//   margin-right: 50px;
-// }
+export const Avatar = styled.img`
+width:30px`

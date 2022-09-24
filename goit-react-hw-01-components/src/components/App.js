@@ -1,4 +1,4 @@
-import { AppWrap,AppItems } from "./App.styled";
+import { AppWrap,AppItems, AppColumn } from "./App.styled";
 import { Profile } from "./Profile/Profile"
 import user from './Profile/user.json'
 import { Statistics } from "./Statistics/Statistics";
@@ -21,12 +21,14 @@ export const App = () => {
             views={user.stats.views}
             likes= {user.stats.likes}
         />
+        <AppColumn>
         <Statistics
           title="Upload stats"
           stats={data}
         />
         <FriendList
-        friends={friends}/>
+            friends={friends} />
+          </AppColumn>
         </AppItems>
         <TransactionHistory
             items={transactions} />

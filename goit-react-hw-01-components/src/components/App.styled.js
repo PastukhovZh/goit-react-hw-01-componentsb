@@ -10,5 +10,13 @@ margin: 0 auto;
     /* align-items: center; */
 `
 export const AppItems = styled.div`
-display: flex; flex-direction: row;
+display: flex; 
+flex-direction: row;
+justify-content: space-evenly;
+`
+
+export const AppColumn = styled.div`
+display:flex;
+flex-direction:column;
+justify-content: space-around;
 `

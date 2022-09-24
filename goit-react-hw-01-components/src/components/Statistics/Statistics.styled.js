@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 
 export const StatisticsWrap = styled.section`
-/* width: 310px; */
 display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,14 +15,13 @@ margin: 0 auto;
 
 export const Title = styled.h2`
    margin: 0;
-   padding-top: 50px;
-   padding-bottom: 50px;`
+padding: 20px 0;`
 
 export const StatsList = styled.ul`
   display: flex;
   flex-direction: row;
   list-style: none;
-  background-color: aquamarine;
+  background-color: burlywood;
   padding-left: 0;
   margin: 0;
   border-radius: 0px 0px 10px 10px;
